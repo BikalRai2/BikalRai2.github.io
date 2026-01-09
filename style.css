@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  background: #020617;
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: radial-gradient(circle at top, #2563eb, #020617 60%);
+}
+
+.hero h1 {
+  font-size: 2.7rem;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  margin: 12px 0 25px;
+  opacity: 0.85;
+}
+
+.btn {
+  text-decoration: none;
+  background: #2563eb;
+  padding: 12px 24px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #3b82f6;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+.light {
+  background: #020617;
+}
+
+.section h2 {
+  color: #60a5fa;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+/* SKILLS */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.skills span {
+  background: #020617;
+  border: 1px solid #1e3a8a;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  transform: translateY(-5px);
+  background: #020617;
+  box-shadow: 0 0 15px #2563eb55;
+}
+
+/* CONTACT */
+.email-box {
+  margin-bottom: 20px;
+  background: #020617;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #1e3a8a;
+}
+
+.email-box a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #020617;
+  color: white;
+  border: 1px solid #1e293b;
+}
+
+.contact-form button {
+  background: #2563eb;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+/* ANIMATIONS */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
