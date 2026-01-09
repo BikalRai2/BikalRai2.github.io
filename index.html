@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bikal | Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero reveal">
+    <h1>Bikal Rai</h1>
+    <p>Future Entrepreneur • Tech Learner • Builder</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section reveal">
+    <h2>About Me</h2>
+    <p>
+      I am a student passionate about technology, electronics, and business. 
+      I am building real-world skills so I can create solutions, startups, and 
+      opportunities instead of only searching for jobs.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section light reveal">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <span>Basic Electronics</span>
+      <span>Website Building</span>
+      <span>Business Thinking</span>
+      <span>Problem Solving</span>
+      <span>AI Tools</span>
+      <span>Creative Learning</span>
+    </div>
+  </section>
+
+  <!-- BUSINESS IDEA -->
+  <section class="section reveal">
+    <h2>My Business Vision</h2>
+    <p>
+      My vision is to build technology-based businesses that combine electronics, 
+      automation, and digital services. I want to create systems that help people 
+      and solve real problems in modern life.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section light reveal" id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="email-box">
+      📧 <strong>Email:</strong> 
+      <a href="mailto:bikal0518@gmail.com">bikal0518@gmail.com</a>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 • Built by Bikal Rai</p>
+  </footer>
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    reveals.forEach(section => {
+      const top = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (top < windowHeight - 100) {
+        section.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+</script>
+
+</body>
+    </html>
